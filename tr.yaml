@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: TaskRun
 metadata:
-  name: echo-taskrun
+  name: mae-echo-tr
   namespace: dev
 spec:
   taskRef:
