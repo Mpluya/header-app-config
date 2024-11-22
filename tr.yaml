@@ -2,6 +2,8 @@
 apiVersion: tekton.dev/v1beta1
 kind: TaskRun
 metadata:
+  annotations:
+    kapp.k14s.io/change-rule: upsert after upserting v1/Deployment
   name: mae-echo-tr
   namespace: dev
 spec:
