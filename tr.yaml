@@ -3,7 +3,8 @@ apiVersion: tekton.dev/v1beta1
 kind: TaskRun
 metadata:
   annotations:
-    kapp.k14s.io/change-rule: upsert after upserting v1/Deployment
+    "kapp.k14s.io/change-group": "second"
+    kapp.k14s.io/change-rule: upsert after upserting first
   name: mae-echo-tr
   namespace: dev
 spec:
