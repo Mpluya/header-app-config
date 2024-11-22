@@ -4,6 +4,8 @@ kind: TaskRun
 metadata:
   name: mae-echo-tr
   namespace: dev
+  annotations:
+    kapp.k14s.io/change-rule: upsert after upserting first
 spec:
   taskRef:
     name: echo-task
